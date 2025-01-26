@@ -67,6 +67,3 @@ def recommend(brand, name, num_recs = 5):
     # Return the names of the recommended perfumes
     recommended_perfumes = df.iloc[perfume_indices][['Perfume', 'Brand', 'Rating Value', 'url']]
     return recommended_perfumes
-
-recommendations = recommend("nautica", "voyage", 5)
-print(recommendations)
